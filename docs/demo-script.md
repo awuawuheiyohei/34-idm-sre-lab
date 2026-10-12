@@ -26,7 +26,7 @@
 ### 0:00-0:30 — 启动
 
 ```bash
-cd /Users/jiangwenrui/Downloads/mass/idm-sre-lab
+cd /Users/jiangwenrui/Downloads/mass/34-idm-sre-lab
 python3 -m app.main
 # 等 ~3 秒 server 起来
 ```

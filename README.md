@@ -25,12 +25,12 @@ IdM SRE Lab 是一个**端到端可运行**的 Identity Management 平台，模�
 
 ```bash
 # 1. 启动
-cd /Users/jiangwenrui/Downloads/mass/idm-sre-lab
+cd /Users/jiangwenrui/Downloads/mass/34-idm-sre-lab
 pip install fastapi uvicorn pydantic pyjwt cryptography bcrypt  # PEP 668：用 venv
 # 或用 .venv：python3 -m venv .venv && .venv/bin/pip install ...
 
 # 2. 共享 .env（用 Interview/.env 拿 LLM key）
-ln -sf /Users/jiangwenrui/Downloads/mass/Interview/.env .env
+ln -sf /Users/jiangwenrui/Downloads/mass/25-Interview/.env .env
 
 # 3. 启动
 python3 -m app.main  # 默认端口 5050

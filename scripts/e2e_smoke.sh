@@ -89,7 +89,7 @@ check "WebAuthn register finish" "curl -fsS -X POST $BASE_URL/webauthn/register/
 CHAL2=$(curl -fsS -X POST $BASE_URL/webauthn/authenticate/begin -d "username=engineer01" | python3 -c "import sys,json; print(json.load(sys.stdin)['challenge'])")
 SIG=$(python3 -c "
 import sys
-sys.path.insert(0, '/Users/jiangwenrui/Downloads/mass/idm-sre-lab')
+sys.path.insert(0, '/Users/jiangwenrui/Downloads/mass/34-idm-sre-lab')
 from app.webauthn.webauthn_core import sign_challenge_response
 print(sign_challenge_response('$CHAL2', '$CRED', 1))
 ")
